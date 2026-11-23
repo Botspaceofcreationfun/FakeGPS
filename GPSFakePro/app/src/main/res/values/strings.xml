@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Fake Pro</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_map">Map</string>
+    <string name="nav_locations">Saved</string>
+    <string name="nav_routes">Routes</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Map screen -->
+    <string name="map_search_hint">Search for a place</string>
+    <string name="map_search_go">Search</string>
+    <string name="map_search_no_results">No place found for “%1$s”.</string>
+    <string name="map_search_unavailable">Geocoding is not available on this device. Enter coordinates manually instead.</string>
+    <string name="map_search_error">Search failed: %1$s</string>
+    <string name="map_manual_title">Enter coordinates</string>
+    <string name="map_manual_lat">Latitude</string>
+    <string name="map_manual_lon">Longitude</string>
+    <string name="map_manual_alt_optional">Altitude (m, optional)</string>
+    <string name="map_manual_invalid">Latitude must be −90…90, longitude −180…180.</string>
+    <string name="map_manual_save">Set location</string>
+    <string name="map_selected_title">Selected</string>
+    <string name="map_selected_accuracy">Approx. accuracy: %1$s m</string>
+    <string name="map_clear_selection">Clear selection</string>
+    <string name="map_center">Centre on selection</string>
+    <string name="map_zoom_in">Zoom in</string>
+    <string name="map_zoom_out">Zoom out</string>
+    <string name="map_tiles_unavailable">Map tiles unavailable (no network). The map may be blank — manual coordinates still work.</string>
+    <string name="map_save_location">Save as favourite</string>
+    <string name="map_add_waypoint">Add to route</string>
+    <string name="map_saved_confirmation">Saved “%1$s”.</string>
+    <string name="map_waypoint_added">Waypoint added.</string>
+    <string name="map_route_started">Route simulation started.</string>
+    <string name="map_no_selection">Tap the map or enter coordinates first.</string>
+    <string name="map_initial_hint">Tap the map to choose a point, or search / enter coordinates.</string>
+    <string name="map_sim_position">Simulated position</string>
+    <string name="map_offline_note">Works without a network: use manual coordinates.</string>
+
+    <!-- Simulation panel -->
+    <string name="sim_status_idle">Idle</string>
+    <string name="sim_status_running">Simulating</string>
+    <string name="sim_status_paused">Paused</string>
+    <string name="sim_status_completed">Route finished</string>
+    <string name="sim_fixed_mode">Fixed position</string>
+    <string name="sim_route_mode">Route</string>
+    <string name="sim_start_fixed">Start fixed</string>
+    <string name="sim_start_route">Start route</string>
+    <string name="sim_pause">Pause</string>
+    <string name="sim_resume">Resume</string>
+    <string name="sim_stop">Stop</string>
+    <string name="sim_restart">Restart</string>
+    <string name="sim_speed_label">Reported speed</string>
+    <string name="sim_speed_value">%1$s m/s · %2$s km/h</string>
+    <string name="sim_bearing_label">Reported bearing</string>
+    <string name="sim_altitude_label">Reported altitude</string>
+    <string name="sim_accuracy_label">Reported accuracy</string>
+    <string name="sim_interval_label">Update interval</string>
+    <string name="sim_interval_value">every %1$s s</string>
+    <string name="sim_progress">Route progress %1$d%%</string>
+    <string name="sim_distance">%1$s of %2$s travelled</string>
+    <string name="sim_pause_at_waypoints">Pause at each waypoint</string>
+    <string name="sim_pause_duration_label">Waypoint pause</string>
+    <string name="sim_position_fmt">%1$s, %2$s</string>
+    <string name="sim_error_mock_not_allowed">Mock location is not allowed. Select “GPS Fake Pro” as the mock-location app under Developer options (Settings → Mock-location help).</string>
+    <string name="sim_error_mock_service">The system mock-location provider is unavailable on this device/build.</string>
+    <string name="sim_error_route_invalid">Route is invalid: %1$s</string>
+    <string name="sim_error_generic">Simulation error: %1$s</string>
+    <string name="sim_completed_note">Route finished — the last position is still being reported.</string>
+    <string name="sim_paused_at_waypoint_fmt">Paused at waypoint %1$d for %2$s</string>
+    <string name="sim_notification_permission_hint">Notifications are disabled. Grant the notification permission to see the simulation status while the app is in the background.</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_name">Simulation status</string>
+    <string name="notif_channel_desc">Persistent status of the running location simulation</string>
+    <string name="notif_title_running">Simulating — GPS Fake Pro</string>
+    <string name="notif_title_paused">Paused — GPS Fake Pro</string>
+    <string name="notif_title_completed">Route finished — GPS Fake Pro</string>
+    <string name="notif_text_fixed">Fixed: %1$s, %2$s</string>
+    <string name="notif_text_route">Route: %1$s, %2$s · %3$d%%</string>
+    <string name="notif_action_pause">Pause</string>
+    <string name="notif_action_resume">Resume</string>
+    <string name="notif_action_stop">Stop</string>
+    <string name="notif_speed">Speed %1$s m/s</string>
+
+    <!-- Saved locations -->
+    <string name="locations_title">Saved locations</string>
+    <string name="locations_search_hint">Filter by name</string>
+    <string name="locations_empty">No saved locations yet. Pick a point on the map and save it as a favourite.</string>
+    <string name="location_add_title">New location</string>
+    <string name="location_edit_title">Edit location</string>
+    <string name="location_name_hint">Name (required)</string>
+    <string name="location_name_required">Please enter a name.</string>
+    <string name="location_coords_invalid">Coordinates are out of range.</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_duplicate">Duplicate</string>
+    <string name="action_use">Use</string>
+    <string name="locations_delete_title">Delete location?</string>
+    <string name="locations_delete_msg">“%1$s” will be removed.</string>
+    <string name="locations_deleted">Location deleted.</string>
+    <string name="locations_duplicated">Duplicated as “%1$s”.</string>
+    <string name="locations_updated">Location saved.</string>
+
+    <!-- Routes -->
+    <string name="routes_title">Routes</string>
+    <string name="routes_search_hint">Filter by name</string>
+    <string name="routes_empty">No routes yet. Create a route from waypoints or import a GPX file.</string>
+    <string name="route_new">New route</string>
+    <string name="route_edit_title">Edit route</string>
+    <string name="route_name_hint">Route name (required)</string>
+    <string name="route_name_required">Please enter a route name.</string>
+    <string name="route_waypoints_label">Waypoints (%1$d)</string>
+    <string name="route_add_waypoint">Add waypoint</string>
+    <string name="route_add_from_selection">From current map selection</string>
+    <string name="route_add_manual">Manual coordinates</string>
+    <string name="route_waypoint_num">Waypoint %1$d</string>
+    <string name="route_move_up">Move up</string>
+    <string name="route_move_down">Move down</string>
+    <string name="route_delete_waypoint">Remove waypoint</string>
+    <string name="route_edit_waypoint">Edit coordinates</string>
+    <string name="route_speed_label">Movement speed</string>
+    <string name="route_pause_at_waypoints">Pause at waypoints</string>
+    <string name="route_pause_duration_label">Pause duration</string>
+    <string name="route_save">Save route</string>
+    <string name="route_start">Start simulation</string>
+    <string name="route_import">Import GPX…</string>
+    <string name="route_export">Export GPX…</string>
+    <string name="route_export_all">Export all as GPX</string>
+    <string name="route_export_done">Exported to “%1$s”.</string>
+    <string name="route_export_failed">Export failed: %1$s</string>
+    <string name="route_import_done">Imported “%1$s” (%2$d waypoints).</string>
+    <string name="route_import_renamed">A route named “%1$s” already exists — imported as “%2$s”.</string>
+    <string name="route_import_empty">No waypoints found in the file.</string>
+    <string name="route_import_too_few">A route needs at least 2 waypoints.</string>
+    <string name="route_import_invalid">Invalid GPX file: %1$s</string>
+    <string name="route_delete_title">Delete route?</string>
+    <string name="route_delete_msg">“%1$s” will be removed.</string>
+    <string name="route_deleted">Route deleted.</string>
+    <string name="route_duplicated">Duplicated as “%1$s”.</string>
+    <string name="route_saved">Route saved.</string>
+    <string name="route_start_error">Cannot start: %1$s</string>
+    <string name="route_card_summary">%1$d waypoints · %2$s m/s (%3$s km/h)</string>
+    <string name="route_needs_selection">Nothing selected. Tap the map or enter coordinates first.</string>
+    <string name="route_no_waypoints">This route has no waypoints yet.</string>
+
+    <!-- GPX errors -->
+    <string name="gpx_error_not_xml">Not a valid XML document.</string>
+    <string name="gpx_error_parse">Could not parse GPX: %1$s</string>
+    <string name="gpx_error_invalid_coords">Invalid coordinates at point %1$d.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_simulation">Simulation defaults</string>
+    <string name="settings_interval">Update interval</string>
+    <string name="settings_interval_summary">How often a new location is reported (0.5–60 s). Higher values save battery.</string>
+    <string name="settings_default_speed">Default speed</string>
+    <string name="settings_default_accuracy">Default reported accuracy</string>
+    <string name="settings_default_altitude">Default altitude</string>
+    <string name="settings_default_bearing">Default bearing (fixed mode)</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">Follow system</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">中文</string>
+    <string name="settings_mock_help_title">Mock-location help</string>
+    <string name="settings_mock_help_body">The app injects locations through Android\'s official mock-location mechanism, which requires you to select this app once:</string>
+    <string name="settings_mock_step1">1. Open your device Settings → About phone.</string>
+    <string name="settings_mock_step2">2. Tap “Build number” 7 times until “You are now a developer” appears.</string>
+    <string name="settings_mock_step3">3. Open System → Developer options (the path varies by device).</string>
+    <string name="settings_mock_step4">4. Find “Select mock location app” and choose “GPS Fake Pro”.</string>
+    <string name="settings_mock_step5">5. Return here and start a simulation.</string>
+    <string name="settings_mock_note">Some manufacturers rename this setting (“Allow mock locations”, “Mock location”, …). If it is missing, your build does not support mock location.</string>
+    <string name="settings_about_title">About</string>
+    <string name="settings_about_body">Ad-free, analytics-free mock-location simulator for testing location-dependent apps. Uses OpenStreetMap (osmdroid) tiles and Android\'s official mock-location API. Route legs are straight lines between waypoints — they do not follow real roads.</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_notif_permission">Notification permission</string>
+    <string name="settings_notif_permission_summary">Needed to keep the simulation status visible in the background.</string>
+    <string name="settings_notif_permission_granted">Granted</string>
+    <string name="settings_clear_recents">Clear recent locations</string>
+    <string name="settings_recents_summary">Recent locations are used to centre the map on start.</string>
+    <string name="settings_cleared">Recent locations cleared.</string>
+    <string name="settings_privacy">Privacy: no ads, no analytics, no tracking. All data stays on this device. Internet is used only for map tiles and place search.</string>
+
+    <!-- Common -->
+    <string name="common_unknown_error">Something went wrong: %1$s</string>
+    <string name="cd_sim_marker">Current simulated position</string>
+    <string name="cd_selection_marker">Selected point</string>
+    <string name="cd_waypoint_marker">Waypoint</string>
+</resources>

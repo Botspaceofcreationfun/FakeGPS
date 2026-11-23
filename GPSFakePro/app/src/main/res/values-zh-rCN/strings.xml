@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Fake Pro</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_map">地图</string>
+    <string name="nav_locations">收藏</string>
+    <string name="nav_routes">路线</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- Map screen -->
+    <string name="map_search_hint">搜索地点</string>
+    <string name="map_search_go">搜索</string>
+    <string name="map_search_no_results">未找到地点“%1$s”。</string>
+    <string name="map_search_unavailable">此设备不支持地理编码。请改用手动输入坐标。</string>
+    <string name="map_search_error">搜索失败：%1$s</string>
+    <string name="map_manual_title">输入坐标</string>
+    <string name="map_manual_lat">纬度</string>
+    <string name="map_manual_lon">经度</string>
+    <string name="map_manual_alt_optional">海拔（米，可选）</string>
+    <string name="map_manual_invalid">纬度范围为 −90…90，经度范围为 −180…180。</string>
+    <string name="map_manual_save">定位</string>
+    <string name="map_selected_title">已选</string>
+    <string name="map_selected_accuracy">约 %1$s 米精度</string>
+    <string name="map_clear_selection">清除选择</string>
+    <string name="map_center">以所选点为中心</string>
+    <string name="map_zoom_in">放大</string>
+    <string name="map_zoom_out">缩小</string>
+    <string name="map_tiles_unavailable">地图瓦片不可用（无网络）。地图可能为空白——手动坐标仍可使用。</string>
+    <string name="map_save_location">保存为收藏</string>
+    <string name="map_add_waypoint">添加到路线</string>
+    <string name="map_saved_confirmation">已保存“%1$s”。</string>
+    <string name="map_waypoint_added">已添加途经点。</string>
+    <string name="map_route_started">路线模拟已开始。</string>
+    <string name="map_no_selection">请先点击地图或输入坐标。</string>
+    <string name="map_initial_hint">点击地图选择位置，或搜索 / 输入坐标。</string>
+    <string name="map_sim_position">模拟位置</string>
+    <string name="map_offline_note">无网络也可使用：请手动输入坐标。</string>
+
+    <!-- Simulation panel -->
+    <string name="sim_status_idle">空闲</string>
+    <string name="sim_status_running">模拟中</string>
+    <string name="sim_status_paused">已暂停</string>
+    <string name="sim_status_completed">路线已完成</string>
+    <string name="sim_fixed_mode">定点模式</string>
+    <string name="sim_route_mode">路线模式</string>
+    <string name="sim_start_fixed">开始定点</string>
+    <string name="sim_start_route">开始路线</string>
+    <string name="sim_pause">暂停</string>
+    <string name="sim_resume">继续</string>
+    <string name="sim_stop">停止</string>
+    <string name="sim_restart">重新开始</string>
+    <string name="sim_speed_label">上报速度</string>
+    <string name="sim_speed_value">%1$s 米/秒 · %2$s 公里/小时</string>
+    <string name="sim_bearing_label">上报航向</string>
+    <string name="sim_altitude_label">上报海拔</string>
+    <string name="sim_accuracy_label">上报精度</string>
+    <string name="sim_interval_label">更新间隔</string>
+    <string name="sim_interval_value">每 %1$s 秒</string>
+    <string name="sim_progress">路线进度 %1$d%%</string>
+    <string name="sim_distance">已行进 %1$s / 共 %2$s</string>
+    <string name="sim_pause_at_waypoints">在每个途经点暂停</string>
+    <string name="sim_pause_duration_label">途经点暂停时长</string>
+    <string name="sim_position_fmt">%1$s, %2$s</string>
+    <string name="sim_error_mock_not_allowed">模拟定位未获允许。请在开发者选项中把“GPS Fake Pro”选为模拟定位应用（设置 → 模拟定位帮助）。</string>
+    <string name="sim_error_mock_service">此设备/系统不支持模拟定位提供器。</string>
+    <string name="sim_error_route_invalid">路线无效：%1$s</string>
+    <string name="sim_error_generic">模拟错误：%1$s</string>
+    <string name="sim_completed_note">路线已完成——仍在持续上报最后位置。</string>
+    <string name="sim_paused_at_waypoint_fmt">在第 %1$d 个途经点暂停 %2$s</string>
+    <string name="sim_notification_permission_hint">通知权限未开启。请授予通知权限，以便在应用进入后台后仍能看到模拟状态。</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_name">模拟状态</string>
+    <string name="notif_channel_desc">运行中的定位模拟的常驻状态</string>
+    <string name="notif_title_running">模拟中 — GPS Fake Pro</string>
+    <string name="notif_title_paused">已暂停 — GPS Fake Pro</string>
+    <string name="notif_title_completed">路线已完成 — GPS Fake Pro</string>
+    <string name="notif_text_fixed">定点：%1$s, %2$s</string>
+    <string name="notif_text_route">路线：%1$s, %2$s · %3$d%%</string>
+    <string name="notif_action_pause">暂停</string>
+    <string name="notif_action_resume">继续</string>
+    <string name="notif_action_stop">停止</string>
+    <string name="notif_speed">速度 %1$s 米/秒</string>
+
+    <!-- Saved locations -->
+    <string name="locations_title">已保存位置</string>
+    <string name="locations_search_hint">按名称筛选</string>
+    <string name="locations_empty">还没有保存的位置。在地图上选点并保存为收藏即可。</string>
+    <string name="location_add_title">新建位置</string>
+    <string name="location_edit_title">编辑位置</string>
+    <string name="location_name_hint">名称（必填）</string>
+    <string name="location_name_required">请输入名称。</string>
+    <string name="location_coords_invalid">坐标超出范围。</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_delete">删除</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_duplicate">复制</string>
+    <string name="action_use">使用</string>
+    <string name="locations_delete_title">删除该位置？</string>
+    <string name="locations_delete_msg">“%1$s”将被移除。</string>
+    <string name="locations_deleted">已删除该位置。</string>
+    <string name="locations_duplicated">已复制为“%1$s”。</string>
+    <string name="locations_updated">位置已保存。</string>
+
+    <!-- Routes -->
+    <string name="routes_title">路线</string>
+    <string name="routes_search_hint">按名称筛选</string>
+    <string name="routes_empty">还没有路线。通过途经点创建路线，或导入 GPX 文件。</string>
+    <string name="route_new">新建路线</string>
+    <string name="route_edit_title">编辑路线</string>
+    <string name="route_name_hint">路线名称（必填）</string>
+    <string name="route_name_required">请输入路线名称。</string>
+    <string name="route_waypoints_label">途经点（%1$d）</string>
+    <string name="route_add_waypoint">添加途经点</string>
+    <string name="route_add_from_selection">使用地图当前所选点</string>
+    <string name="route_add_manual">手动输入坐标</string>
+    <string name="route_waypoint_num">途经点 %1$d</string>
+    <string name="route_move_up">上移</string>
+    <string name="route_move_down">下移</string>
+    <string name="route_delete_waypoint">移除途经点</string>
+    <string name="route_edit_waypoint">编辑坐标</string>
+    <string name="route_speed_label">行进速度</string>
+    <string name="route_pause_at_waypoints">在途经点暂停</string>
+    <string name="route_pause_duration_label">暂停时长</string>
+    <string name="route_save">保存路线</string>
+    <string name="route_start">开始模拟</string>
+    <string name="route_import">导入 GPX…</string>
+    <string name="route_export">导出 GPX…</string>
+    <string name="route_export_all">全部导出为 GPX</string>
+    <string name="route_export_done">已导出到“%1$s”。</string>
+    <string name="route_export_failed">导出失败：%1$s</string>
+    <string name="route_import_done">已导入“%1$s”（%2$d 个途经点）。</string>
+    <string name="route_import_renamed">已存在名为“%1$s”的路线——以“%2$s”导入。</string>
+    <string name="route_import_empty">文件中未找到途经点。</string>
+    <string name="route_import_too_few">路线至少需要 2 个途经点。</string>
+    <string name="route_import_invalid">无效的 GPX 文件：%1$s</string>
+    <string name="route_delete_title">删除该路线？</string>
+    <string name="route_delete_msg">“%1$s”将被移除。</string>
+    <string name="route_deleted">已删除该路线。</string>
+    <string name="route_duplicated">已复制为“%1$s”。</string>
+    <string name="route_saved">路线已保存。</string>
+    <string name="route_start_error">无法开始：%1$s</string>
+    <string name="route_card_summary">%1$d 个途经点 · %2$s 米/秒（%3$s 公里/小时）</string>
+    <string name="route_needs_selection">尚未选择位置。请点击地图或输入坐标。</string>
+    <string name="route_no_waypoints">该路线还没有途经点。</string>
+
+    <!-- GPX errors -->
+    <string name="gpx_error_not_xml">不是有效的 XML 文档。</string>
+    <string name="gpx_error_parse">无法解析 GPX：%1$s</string>
+    <string name="gpx_error_invalid_coords">第 %1$d 个点的坐标无效。</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_simulation">模拟默认值</string>
+    <string name="settings_interval">更新间隔</string>
+    <string name="settings_interval_summary">每隔多久上报一次新位置（0.5–60 秒）。数值越大越省电。</string>
+    <string name="settings_default_speed">默认速度</string>
+    <string name="settings_default_accuracy">默认上报精度</string>
+    <string name="settings_default_altitude">默认海拔</string>
+    <string name="settings_default_bearing">默认航向（定点模式）</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">中文</string>
+    <string name="settings_mock_help_title">模拟定位帮助</string>
+    <string name="settings_mock_help_body">本应用通过 Android 官方模拟定位机制注入位置，需要先选择本应用一次：</string>
+    <string name="settings_mock_step1">1. 打开设备的“设置”→“关于手机”。</string>
+    <string name="settings_mock_step2">2. 连续点击“版本号”7 次，直到出现“您已进入开发者模式”。</string>
+    <string name="settings_mock_step3">3. 进入“系统”→“开发者选项”（路径因设备而异）。</string>
+    <string name="settings_mock_step4">4. 找到“选择模拟位置信息应用”，选择“GPS Fake Pro”。</string>
+    <string name="settings_mock_step5">5. 返回本应用，开始模拟。</string>
+    <string name="settings_mock_note">部分厂商会改写此设置项名称（如“允许模拟位置”“模拟位置”等）。如果找不到，说明该系统版本不支持模拟定位。</string>
+    <string name="settings_about_title">关于</string>
+    <string name="settings_about_body">无广告、无统计的模拟定位工具，用于测试依赖定位的应用。使用 OpenStreetMap（osmdroid）瓦片与 Android 官方模拟定位 API。路线各段为途经点之间的直线，不沿真实道路。</string>
+    <string name="settings_version">版本 %1$s</string>
+    <string name="settings_notif_permission">通知权限</string>
+    <string name="settings_notif_permission_summary">用于在后台持续显示模拟状态。</string>
+    <string name="settings_notif_permission_granted">已授予</string>
+    <string name="settings_clear_recents">清除最近位置</string>
+    <string name="settings_recents_summary">启动时使用最近位置来定位地图中心。</string>
+    <string name="settings_cleared">最近位置已清除。</string>
+    <string name="settings_privacy">隐私：无广告、无统计、无追踪。所有数据仅保存在本机。联网仅用于地图瓦片与地点搜索。</string>
+
+    <!-- Common -->
+    <string name="common_unknown_error">出错了：%1$s</string>
+    <string name="cd_sim_marker">当前模拟位置</string>
+    <string name="cd_selection_marker">所选点</string>
+    <string name="cd_waypoint_marker">途经点</string>
+</resources>

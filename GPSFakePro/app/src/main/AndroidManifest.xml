@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      Permissions used by GPS Fake Pro:
+      - INTERNET / ACCESS_NETWORK_STATE : OpenStreetMap tiles + network geocoding.
+      - FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE : keep the simulation
+        running when the UI is backgrounded (Android 8+/14+).
+      - ACCESS_MOCK_LOCATION : signature-level permission that the system grants
+        to whichever app is selected under "Select mock location app" in
+        Developer options. Declaring it here is required for addTestProvider().
+      - POST_NOTIFICATIONS : runtime permission (Android 13+) for the persistent
+        simulation notification. Requested from the UI, not required to run.
+      No location permission, no storage permission, no advertising/analytics SDK.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".GpsFakeProApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GpsFakePro"
+        tools:targetApi="35">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+          Foreground service that injects mock locations. Uses the "specialUse"
+          type so the app does not need real location permissions; the subtype
+          string explains the purpose.
+        -->
+        <service
+            android:name=".service.LocationSimulationService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Simulates GPS locations for testing location-dependent apps (mock location, Android developer option)" />
+        </service>
+    </application>
+</manifest>
